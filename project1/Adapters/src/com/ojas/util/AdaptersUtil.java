@@ -21,5 +21,8 @@ public class AdaptersUtil {
 		return userLogin;
 		
 	}
+	public void getUserDetails(String userKey) {
+		
+	}
 
 }
