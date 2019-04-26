@@ -3,5 +3,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/oimjars"/>
+	<classpathentry kind="lib" path="C:/jars/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/jars/jrf-api.jar"/>
+	<classpathentry kind="lib" path="C:/jars/oimclient.jar"/>
+	<classpathentry kind="lib" path="C:/jars/OIMServer.jar"/>
+	<classpathentry kind="lib" path="C:/jars/spring.jar"/>
+	<classpathentry kind="lib" path="C:/jars/wlfullclient.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
