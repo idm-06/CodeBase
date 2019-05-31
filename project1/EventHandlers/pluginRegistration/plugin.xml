@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oimplugins xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/schema/oim/plugin plugin.xsd">
+<plugins pluginpoint="oracle.iam.platform.kernel.spi.EventHandler">
+<plugin pluginclass="com.ojas.eventhandlers.PopulateEmailPostProcessEventHandler" version="1.0" name="PopulateEmailPostProcessEventHandler">
+</plugin>
+</plugins>
+</oimplugins>
