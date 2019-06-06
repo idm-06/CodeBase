@@ -150,7 +150,7 @@ public class PopulateEmailPostProcessEventHandler implements PostProcessHandler 
 		try {
 			int i = 0;
 			List<User> users = userManager.search(criteria, null, null);
-			
+			LOGGER.info("List of users getting from search criteria : " + users.size());
 			for (Iterator<User> iterator = users.iterator(); iterator.hasNext();) {
 				User user = (User) iterator.next();
 				if(user.getEmail() != null) {
@@ -163,11 +163,15 @@ public class PopulateEmailPostProcessEventHandler implements PostProcessHandler 
 			}
 			if(i == 0) {
 				updatedMail = email;
+				LOGGER.info("no existing email matching with current generated mail : " + email);
 			} else {
 				if(firstName != null){
-				updatedMail = firstName + "." + lastName + "@ojas-it.com";
-				LOGGER.info("no existing email matching with current generated mail : " + email);
-				}
+					LOGGER.info("There is an existing Email : " + email);
+					updatedMail = firstName + "." + lastName + mailCount + "@ojas-it.com";
+					LOGGER.info("Updated mail after modifying existing email : " + updatedMail);
+					mailCount++;
+					validateEmail(updatedMail, firstName, lastName);
+					}
 				else {
 					LOGGER.info("There is an existing Email : " + email);
 					updatedMail = "test." + lastName+ mailCount + "@ojas-it.com";
