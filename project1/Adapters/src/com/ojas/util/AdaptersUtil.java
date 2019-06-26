@@ -1,5 +1,7 @@
 package com.ojas.util;
 
+import oracle.core.ojdl.logging.ODLLevel;
+import oracle.core.ojdl.logging.ODLLogger;
 import oracle.iam.identity.usermgmt.api.UserManager;
 import oracle.iam.platform.Platform;
 
