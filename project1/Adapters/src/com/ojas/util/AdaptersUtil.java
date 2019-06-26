@@ -23,7 +23,7 @@ public class AdaptersUtil {
 	}
 	public void getUserDetails(String userKey) {
 		
-		//Method added
+		//Method
 	}
 
 }
