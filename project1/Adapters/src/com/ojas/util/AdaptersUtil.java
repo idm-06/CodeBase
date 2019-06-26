@@ -22,7 +22,7 @@ public class AdaptersUtil {
 		
 	}
 	public void getUserDetails(String userKey) {
-		System.out.println("*******//////sneha////////*************");
+		
 		
 	}
 
