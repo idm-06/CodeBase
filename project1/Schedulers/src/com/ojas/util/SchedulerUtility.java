@@ -8,6 +8,7 @@ public class SchedulerUtility {
 	
 	public void printHashMap() {
 		//Method
+int i =0;
 	}
 
 }
